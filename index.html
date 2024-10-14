@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Script file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="search">
+                <form action="">
+                    <i class="bi bi-search"></i>
+                    <input type="search" placeholder="Search..." class="search-Box">
+                </form>
+            </div>
+            <div class="dropdown">
+                    <select name="region" id="region">
+                        <option value="select">Filter by region</option>
+                        <option value="africa">Africa</option>
+                        <option value="asia">Asia</option>
+                        <option value="america">America</option>
+                        <option value="europe">Europe</option>
+                    </select>
+            </div>
+            <div class="mode"><i class="bi bi-moon-stars"></i><span class="mode-text"> Dark Mode</span></div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="heading"></div>
+        <div class="countries-container"></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui;
+}
+
+body {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    box-shadow: 2px 2px 10px #adadad;
+}
+.search {
+    height: 40px;
+    width: 20%;
+    margin-left: 50px;
+}
+.search form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+}
+.search form input {
+    height: 100%;
+    width: 87%;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.dropdown {
+    width: 15%;
+    margin-left: 600px;
+}
+.dropdown select {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.mode {
+    height: 40px;
+    width: 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.dark {
+    color: #fff;
+    background-color: #010a25;
+    .navbar {
+        background-color: #010a25;
+    }
+    .card {
+        color: #fff;
+    }
+}
+
+main {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-left: 50px;
+}
+
+.countries-container {
+    height: 90%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.card {
+    height: 450px;
+    width: 320px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #b2b2b2;
+}
+.card img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+.card p {
+    width: 80%;
+    margin-top: 25px;
+    font-size: 1.25rem;
+}
+
+
+@media screen and (max-width: 775.9px) {
+    .search {
+        height: 37px;
+        width: 33%;
+        margin-left: 25px;
+    }
+    .search form {
+        font-size: 1.5rem;
+    }
+    .search form input {
+        height: 100%;
+        width: 87%;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+    
+    .dropdown {
+        width: 25%;
+        margin-left: 0px;
+    }
+    .dropdown select {
+        height: 37px;
+        width: 100%;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+    
+    .mode {
+        height: 37px;
+        width: 15%;
+        margin-right: 25px;
+    }
+    h1 {
+        margin-left: 25px;
+    }
+
+    .countries-container {
+        justify-content: start;
+    }
+    .card {
+        height: 425px;
+        margin-left: 15px;
+    }
+}
+
+
+@media screen and (max-width: 433.9px) {
+    .search {
+        height: 37px;
+        width: 40%;
+        margin-left: 15px;
+    }
+    .search form {
+        font-size: 1.2rem;
+    }
+    .search form input {
+        height: 100%;
+        width: 85%;
+        font-size: 0.9rem;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+    
+    .dropdown {
+        width: 30%;
+        margin-left: 0px;
+    }
+    .dropdown select {
+        height: 37px;
+        width: 100%;
+        font-size: 0.9rem;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+    .mode {
+        height: 37px;
+        width: 10%;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+    h1 {
+        font-size: 2.25rem;
+        margin-left: 25px;
+    }
+
+    .countries-container {
+        justify-content: center;
+    }
+    .card {
+        height: 410px;
+        width: 350px;
+        margin-left: 15px;
+    }
+    .mode-text {
+        display: none;
+    }
+}
